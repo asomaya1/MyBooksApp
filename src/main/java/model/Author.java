@@ -13,7 +13,7 @@ public class Author {
         this.numOfBooks = numOfBooks;
         this.nationality = nationality;
     }
-
+    //This will appear on BranchB only
     public String getName() {
         return name;
     }
