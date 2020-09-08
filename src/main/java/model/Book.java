@@ -1,5 +1,6 @@
 package model;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Book {
@@ -8,9 +9,9 @@ public class Book {
     private String isbn;
     private String publisher;
     private int year;
-    private String author;
+    private List<Author> author;
 
-    public Book(String title, String isbn, String publisher, int year, String author) {
+    public Book(String title, String isbn, String publisher, int year, List<Author> author) {
         this.title = title;
         this.isbn = isbn;
         this.publisher = publisher;
@@ -34,7 +35,7 @@ public class Book {
         return year;
     }
 
-    public String getAuthor() {
+    public List<Author> getAuthor() {
         return author;
     }
 
@@ -54,7 +55,7 @@ public class Book {
         this.year = year;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(List<Author> author) {
         this.author = author;
     }
 
